@@ -1,163 +1,210 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-        <link rel="icon" href="images/bg.ico" type="image/icon type">
-		<title>@bryanjeff creations</title>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-        <link rel="stylesheet" href="./style.css" />
-	</head>
-	<body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Portfolio of Bryan Jeff Saycon, a developer building practical web experiences." />
+    <link rel="icon" href="images/bg.ico" type="image/icon type" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Bryan Jeff Saycon</title>
+</head>
+<body>
     <header>
-        <a href="#" class="logo">Bruh</a>
-        <div class="toggle" onclick="toggleMenu();">
-            <ul class="menu" onclick="toggleMenu();">
+        <a href="#Home" class="logo" aria-label="Bryan Jeff Saycon home">BJS</a>
+        <button class="toggle" type="button" aria-label="Open menu" aria-expanded="false" onclick="toggleMenu();"></button>
+        <nav>
+            <ul class="menu">
                 <li><a href="#Home" onclick="toggleMenu();">Home</a></li>
                 <li><a href="#About" onclick="toggleMenu();">About</a></li>
+                <li><a href="#Work" onclick="toggleMenu();">Work</a></li>
                 <li><a href="#Contact" onclick="toggleMenu();">Contact</a></li>
             </ul>
-        </div>
+        </nav>
     </header>
-    <section class="banner" id="Home">
-        <div class="text-box">
-            <h2>i am<br> <span>Bryan Jeff</span></h2>
-            <h3>self-learning web developer, <br>electronics engineering student</h3>
-            <a href ="#About" class="btn">about</a>
-        </div>
-    </section>
-    <section class="about" id="About">
-        <div class="heading">
-            <h2>About Me</h2>
-        </div>
-        <div class="content"> 
-            <div class="contentBx a1">
-            <h3>Im a self-learning web developer<br><br></h3>
-            <p> Im currently practicing frontend fundamentals and 
-                tools for responsive web design through extensive research. 
-                Im currently an Electronics
-                Engineering student at Mindanao State University - 
-                Iligan Institute of Technology. Im about to launch my freelance projects soon. 
-                Keep in touch!
 
-            </p>
+    <main>
+        <section class="banner" id="Home" aria-label="Introduction">
+            <div class="hero-grid"></div>
+            <div class="text-box">
+                <p class="kicker">Variant file: portfolio / 2026</p>
+                <h1>Bryan Jeff Saycon</h1>
+                <h2>Web developer with an electronics engineering backbone.</h2>
+                <p class="hero-copy">
+                    I build useful, responsive interfaces with a systems mindset: practical enough for work,
+                    polished enough to remember, and simple enough to keep maintaining.
+                </p>
+                <div class="hero-actions">
+                    <a href="#About" class="btn">About</a>
+                    <a href="#Contact" class="btn secondary">Contact</a>
+                </div>
             </div>
-            <div class="a1">
-                <img src="images/bgv.jpg">
+            <aside class="hero-card" aria-label="Current focus">
+                <span class="stamp">AUTHORIZED</span>
+                <p class="mono-label">Current desk</p>
+                <h3>Front-end craft, practical systems, and better interfaces.</h3>
+                <div class="status-row">
+                    <span></span>
+                    <p>Available for thoughtful web work and collaboration.</p>
+                </div>
+            </aside>
+        </section>
+
+        <section class="about" id="About">
+            <div class="heading">
+                <p class="section-code">Case file 01</p>
+                <h2>About Me</h2>
             </div>
-        </div>
-    </section>
-    <section class="contact" id="Contact">
-        <div class="heading white">
-            <h2>Contact Me</h2>
-        </div>
-        <div class="content">
-            <div class="contactInfo">
-                <h3>Contact Info</h3>
-                <div class="contactInfoBx">
-                    <div class="box">
-                        <div class="icon"><i class="fa fa-map-marker"></i></div>
-                        <div class="text">
-                            <h3>Address</h3>
-                            <p>Dalipuga, Iligan City 9200</p>
-                        </div>    
-                    </div>
-                    <div class="box">
-                        <div class="icon"><i class="fa fa-phone"></i></div>
-                        <div class="text">
-                            <h3>Phone</h3>
-                            <p>---- --- --- -- </p>
-                        </div>    
-                    </div>
-                    <div class="box">
-                        <div class="icon"><i class="fa fa-envelope-o"></i> </div>
-                        <div class="text">
-                            <h3>Email</h3>
-                            <p>bryanjeff.saycon@g.msuiit.edu.ph</p>
-                        </div>    
+            <div class="content about-content">
+                <div class="contentBx a1">
+                    <h3>Six years later, the fundamentals still matter.</h3>
+                    <p>
+                        This site started as a from-scratch HTML and CSS project. Since then, I have gained
+                        more experience building for the web, thinking through responsive layouts, debugging
+                        real interfaces, and turning loose ideas into working screens.
+                    </p>
+                    <p>
+                        My electronics engineering background keeps me close to systems, constraints, and
+                        detail. My web work leans toward interfaces that are clear, usable, and built with
+                        enough care to age well.
+                    </p>
+                </div>
+                <div class="portrait-panel a1">
+                    <img src="images/bgv.jpg" alt="Portrait of Bryan Jeff Saycon" />
+                    <div class="panel-strip">
+                        <span>MSU-IIT</span>
+                        <span>Iligan City</span>
+                        <span>Web / Engineering</span>
                     </div>
                 </div>
             </div>
-            <div class="formBx">
-                <form id="my-form" action="https://formspree.io/f/mwkwvrva" method="POST">
-                    <h3>Send a Message!</h3>
-                    <input type="text" name="subject" id="subject" placeholder="Subject">
-                    <input type="email" name="email" id="email" placeholder="Email">
-                    <textarea placeholder="Your Message" name="text" id="text"></textarea>
-                    <input type="submit" value="Send" id="my-form-button">
-                    <p id='my-form-status'></p>
-                </form>
-            </div>
-        </div>
-    </section>
-    
-    <div class="copyright">
-        <p>This webpage is made from html scratch.</p>
-    </div>
+        </section>
 
-    <script type="text/javascript">
-        window.addEventListener('scroll', function(){
+        <section class="work" id="Work">
+            <div class="heading">
+                <p class="section-code">Case file 02</p>
+                <h2>What I Care About</h2>
+            </div>
+            <div class="work-grid">
+                <article>
+                    <span class="card-number">01</span>
+                    <h3>Responsive Interfaces</h3>
+                    <p>Layouts that survive real devices, cramped screens, and everyday content changes.</p>
+                </article>
+                <article>
+                    <span class="card-number">02</span>
+                    <h3>Readable Code</h3>
+                    <p>HTML, CSS, and JavaScript that can be understood again after the initial burst of energy.</p>
+                </article>
+                <article>
+                    <span class="card-number">03</span>
+                    <h3>Useful Polish</h3>
+                    <p>Small details: rhythm, contrast, states, spacing, and motion that make a page feel intentional.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="contact" id="Contact">
+            <div class="heading white">
+                <p class="section-code">Case file 03</p>
+                <h2>Contact Me</h2>
+            </div>
+            <div class="content">
+                <div class="contactInfo">
+                    <h3>Contact Info</h3>
+                    <div class="contactInfoBx">
+                        <div class="box">
+                            <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                            <div class="text">
+                                <h3>Address</h3>
+                                <p>Dalipuga, Iligan City 9200</p>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                            <div class="text">
+                                <h3>Phone</h3>
+                                <p>---- --- --- --</p>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
+                            <div class="text">
+                                <h3>Email</h3>
+                                <p>bryanjeff.saycon@g.msuiit.edu.ph</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="formBx">
+                    <form id="my-form" action="https://formspree.io/f/mwkwvrva" method="POST">
+                        <h3>Send a Message</h3>
+                        <input type="text" name="subject" id="subject" placeholder="Subject" />
+                        <input type="email" name="email" id="email" placeholder="Email" />
+                        <textarea placeholder="Your Message" name="text" id="text"></textarea>
+                        <input type="submit" value="Send" id="my-form-button" />
+                        <p id="my-form-status"></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="copyright">
+        <p>Made from HTML scratch. Recommissioned for 2026.</p>
+    </footer>
+
+    <script>
+        window.addEventListener('scroll', function() {
             var header = document.querySelector('header');
             header.classList.toggle('sticky', window.scrollY > 100);
         });
 
-        function toggleMenu(){
+        function toggleMenu() {
             var menuToggle = document.querySelector('.toggle');
             var menu = document.querySelector('.menu');
-            menuToggle.classList.toggle('active');
+            var isActive = menuToggle.classList.toggle('active');
             menu.classList.toggle('active');
+            menuToggle.setAttribute('aria-expanded', isActive ? 'true' : 'false');
+            menuToggle.setAttribute('aria-label', isActive ? 'Close menu' : 'Open menu');
+        }
+
+        window.addEventListener('DOMContentLoaded', function() {
+            var form = document.getElementById('my-form');
+            var button = document.getElementById('my-form-button');
+            var status = document.getElementById('my-form-status');
+
+            function success() {
+                form.reset();
+                button.style = 'display: none';
+                status.innerHTML = 'Thanks!';
+            }
+
+            function error() {
+                status.innerHTML = 'Oops! There was a problem.';
+            }
+
+            form.addEventListener('submit', function(ev) {
+                ev.preventDefault();
+                var data = new FormData(form);
+                ajax(form.method, form.action, data, success, error);
+            });
+        });
+
+        function ajax(method, url, data, success, error) {
+            var xhr = new XMLHttpRequest();
+            xhr.open(method, url);
+            xhr.setRequestHeader('Accept', 'application/json');
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState !== XMLHttpRequest.DONE) return;
+                if (xhr.status === 200) {
+                    success(xhr.response, xhr.responseType);
+                } else {
+                    error(xhr.status, xhr.response, xhr.responseType);
+                }
+            };
+            xhr.send(data);
         }
     </script>
-    <!-- Add Social Links and Icons-->
-    <!-- Add image slider and a fancy intro-->
-    <!-- Add Header ICON-->
-    </body>
-    <!-- Soemthing to commit-->
-<script>
-    window.addEventListener("DOMContentLoaded", function() {
-  
-      // get the form elements defined in your form HTML above
-      
-      var form = document.getElementById("my-form");
-      var button = document.getElementById("my-form-button");
-      var status = document.getElementById("my-form-status");
-  
-      // Success and Error functions for after the form is submitted
-      
-      function success() {
-        form.reset();
-        button.style = "display: none ";
-        status.innerHTML = "Thanks!";
-      }
-  
-      function error() {
-        status.innerHTML = "Oops! There was a problem.";
-      }
-  
-      // handle the form submission event
-  
-      form.addEventListener("submit", function(ev) {
-        ev.preventDefault();
-        var data = new FormData(form);
-        ajax(form.method, form.action, data, success, error);
-      });
-    });
-    
-    // helper function for sending an AJAX request
-  
-    function ajax(method, url, data, success, error) {
-      var xhr = new XMLHttpRequest();
-      xhr.open(method, url);
-      xhr.setRequestHeader("Accept", "application/json");
-      xhr.onreadystatechange = function() {
-        if (xhr.readyState !== XMLHttpRequest.DONE) return;
-        if (xhr.status === 200) {
-          success(xhr.response, xhr.responseType);
-        } else {
-          error(xhr.status, xhr.response, xhr.responseType);
-        }
-      };
-      xhr.send(data);
-    }
-  </script>
+</body>
 </html>
